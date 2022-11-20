@@ -1,4 +1,3 @@
-
-userHello = input()
-userHello = userHello.upper()
-print(f'"{userHello}"', sep='')
+# Ask user for a string
+userString = input()
+print(f'{userString.lower()}')
