@@ -9,8 +9,10 @@ def main():
     return (camelcase_converter(userString))
 
 def camelcase_converter(userString: str):
-    if userString == "camelCase":
-        return("camel_case")
-
+    for char in userString:
+        if char.isupper():
+            print("_"+char.lower(), end="")
+        else:
+            print(char,sep="")
 
 # main()

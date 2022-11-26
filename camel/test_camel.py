@@ -7,5 +7,7 @@
 
 from camel import camelcase_converter
 
+
 def test_camelcase_converter():
     assert camelcase_converter("camelCase") == ("camel_case")
+    assert camelcase_converter("helloWorld") == ("hello_world")
