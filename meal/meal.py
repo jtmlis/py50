@@ -5,11 +5,17 @@ def main():
     userTime = str(input("Enter the time"))
     return convert(userTime)
 def convert(userTime: str):
+    pm = False
+    if "pm" in userTime:
+        userTime = userTime.replace("pm","")
+        pm = True
     userTime = userTime.replace("am", "")
     hour, minutes = userTime.split(":")
     hour = float(hour)
     minutes = float(minutes)
     minutes = minutes / 60
+    if pm:
+        hour += 12
     return hour + minutes
 # if __name__ == "__main__" :
     # main()
