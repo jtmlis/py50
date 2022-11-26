@@ -5,6 +5,7 @@ def main():
     userTime = str(input("Enter the time"))
     return convert(userTime)
 def convert(userTime: str):
+    userTime = userTime.replace("am", "")
     hour, minutes = userTime.split(":")
     hour = float(hour)
     minutes = float(minutes)
