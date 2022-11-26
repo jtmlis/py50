@@ -3,3 +3,6 @@
 test_tutorial
 
 test_tutorial
+/meal/__pycache__/
+/pytest/
+/bank/__pycache__/
