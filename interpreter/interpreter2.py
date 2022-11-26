@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# https://cs50.harvard.edu/python/2022/psets/1/bank/
+um https://cs50.harvard.edu/python/2022/psets/1/bank/
 
 
 def main():
@@ -12,13 +12,5 @@ def greetingValidator(greeting:str):
     see seinfeld episode for more details"""
     if greeting.startswith("hello"):
         return "$0"
-    elif greeting.startswith("h" or "H"):
-        return "$20" 
-    else:
-        return "$100" 
-
-def test_greeting_validator():
-    assert greetingValidator("hello") == "$0"
-    assert greetingValidator("h") == "$20"
-    assert greetingValidator("what's up") == "$100"
-
+-- INSERT --                                                  2,3           Top
+[0] 0:*                                                    "box" 20:52 25-Nov-22
