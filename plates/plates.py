@@ -13,7 +13,7 @@ def main():
 # Anna's code
 def is_valid(s: str):
     # must contain 6 chars max, 2 chars min
-    #ipdb.set_trace()
+    # ipdb.set_trace()
     if len(s) < 2 or len(s) > 6:
         return False
     # Begins with 2 letters
@@ -21,11 +21,9 @@ def is_valid(s: str):
         return False
 
     # cannot start with 0
-    if s[0] == "0":
+    if s[0] == "0" or s[-1].isalpha():
         return False
     # can not end with a letter
-    if s[-1] == s.isalpha():
-        return False
 
     # while loop
     i = 0
