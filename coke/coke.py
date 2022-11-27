@@ -1,16 +1,21 @@
 #!/usr/bin/env python3
 # import ipdb
 def main():
-   balance = 50
-   while balance > 0:
-       coin = int(input("please insert a coin : "))
-       if coin == 5 or coin == 10 or coin ==25 or coin == 50:
-           balance = balance - coin
-           print(f"{balance} is your new balance")
-       else:
-           print("insert a valid coin")
-           break
-   change_owed = abs(balance)
-   print(f"Change Owned :{change_owed}")
+    valid_coins = {
+        "nickel" :float(0.05),
+        "dime": float(0.10),
+        "quarter":float(0.25),
+    }
+    balance = 0.50
+    userPaid = int(input("Please insert a coin"))
+    return(get_balance(userPaid,balance,valid_coins))
 
-main()
+def get_balance(paid:float, balance: float, valid_coins: dict):
+        for paid in valid_coins.values():
+            balance =  balance - paid
+            print(balance)
+        else:
+            print("please insert a valid coin")
+
+
+main ()
