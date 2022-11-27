@@ -6,8 +6,9 @@ def main():
         print("Invalid")
 
 
-def is_valid(s):
-    ...
+def is_valid(s:str):
+    if s == "AAA222":
+        return "valid"
 
 
-main()
+#main()
