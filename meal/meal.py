@@ -4,6 +4,7 @@
 def main():
     userTime = str(input("Enter the time"))
     return convert(userTime)
+    #return meal_time(userTime)
 def convert(userTime: str):
     pm = False
     if "pm" in userTime:
@@ -17,5 +18,16 @@ def convert(userTime: str):
     if pm:
         hour += 12
     return hour + minutes
+def meal_time(time: float):
+    """returns what type of meal it is time for"""
+    if time > 24.00 or time < 0:
+        return ("hmm they are only 24 hours in a day.")
+    elif time <= 24 and time >=18:
+        return("It is dinner Time. ")
+    elif time <= 18 and time >=12:
+        return("It is dinner Time. ")
+    elif time <= 12 and time >=6:
+        return("breakfast time")
+
 # if __name__ == "__main__" :
     # main()
