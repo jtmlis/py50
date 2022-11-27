@@ -41,4 +41,4 @@ def is_valid(s: str):
     return True
 
 
-#main()
+main()
