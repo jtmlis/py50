@@ -19,5 +19,7 @@ class TestConvert:
     def test_meal_time(self):
         assert meal_time(7.5) == "breakfast time"
         assert meal_time(11) == "breakfast time"
-        # Test Luch Time
+        # Test Lunch Time
         assert meal_time(12) == "It is lunch Time."
+        # Test Dinner Time
+        assert meal_time(18) == "It is dinner Time."
