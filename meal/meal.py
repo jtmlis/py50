@@ -25,7 +25,7 @@ def meal_time(time: float):
     elif time <= 24 and time >=18:
         return("It is dinner Time. ")
     elif time <= 18 and time >=12:
-        return("It is dinner Time. ")
+        return("It is lunch Time.")
     elif time <= 12 and time >=6:
         return("breakfast time")
 

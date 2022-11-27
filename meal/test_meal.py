@@ -20,4 +20,4 @@ class TestConvert:
         assert meal_time(7.5) == "breakfast time"
         assert meal_time(11) == "breakfast time"
         # Test Luch Time
-        assert meal_time(12) == "lunch time"
+        assert meal_time(12) == "It is lunch Time."
