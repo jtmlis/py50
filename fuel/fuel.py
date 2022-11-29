@@ -1,6 +1,25 @@
 #https://cs50.harvard.edu/python/2022/psets/3/fuel/
 
 # Takes x & y as INT
+def main():
+    gastank = input("Fraction :")
+
+
+def fuelgauge(fuel):
+    return "75%"
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # returns as a rounded % to nearest Int
 # If less than 1% return Empty
