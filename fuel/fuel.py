@@ -11,9 +11,7 @@ def main():
 
 def fuel_gauge(fuel):
     x,y, = fuel.split("/")
-    x = int(x)
-    y = int(y)
-    status = (x / y) * 100
+    status = (int(x) / int(y) * 100)
     status = int(status)
     return f"{status}%"
 
