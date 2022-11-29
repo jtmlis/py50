@@ -13,5 +13,6 @@ def test_fuel_gauge():
 # 0/4 outputs E
     assert fuel_gauge("0/100") == ("E")
 # 4/0 outputs ZeroDivisionError
+    assert fuel_gauge("6/0") == ZeroDivisionError
 # three/four outputs ValueError
 # 5/4 outputs prompt for user again
