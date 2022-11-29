@@ -13,6 +13,12 @@ def fuel_gauge(fuel):
     x,y, = fuel.split("/")
     status = (int(x) / int(y) * 100)
     status = int(status)
+    if status >= 99:
+        return "F"
+    elif status <= 1:
+        return "E"
+    else:
+        pass
     return f"{status}%"
 
 
