@@ -9,6 +9,7 @@ def test_fuel_gauge():
 # 1/4 outputs 25%
     assert fuel_gauge("1/4") == ("25%")
 # 4/4 outputs F
+    assert fuel_gauge("4/4") == ("F")
 # 0/4 outputs E
 # 4/0 outputs ZeroDivisionError
 # three/four outputs ValueError
