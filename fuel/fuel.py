@@ -1,12 +1,21 @@
 #https://cs50.harvard.edu/python/2022/psets/3/fuel/
-
+import ipdb
 # Takes x & y as INT
+
+
 def main():
+    ipdb.set_trace()
     gastank = input("Fraction :")
+    return fuel_gauge(gastank)
 
 
-def fuelgauge(fuel):
-    return "75%"
+def fuel_gauge(fuel):
+    x,y, = fuel.split("/")
+    x = int(x)
+    y = int(y)
+    status = (x / y) * 100
+    status = int(status)
+    return f"{status}%"
 
 
 
@@ -29,3 +38,4 @@ def fuelgauge(fuel):
 # if x or y not an INT prompt again
 # is X greater than Y
 # if y is 0
+#main()
